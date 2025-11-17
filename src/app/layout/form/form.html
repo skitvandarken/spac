@@ -1,0 +1,130 @@
+<section id="contact-form-section ">
+
+    <div style="background : linear-gradient(190deg, #000, #444);">
+
+
+        <div class="uk-container">
+
+
+
+
+            <div class="uk-container uk-text-center uk-margin-large-top uk-margin-large-bottom">
+
+                <div class="uk-text-center">
+                    <p class="texto-fundo ">Fale Connosco
+                    </p>
+                </div>
+
+
+                <h1 class="texto-5"> Comece a sua Transição para Telecomunicação Off-Grid.
+                </h1>
+
+            </div>
+            <h2 style="font-family: inherit;" class="section-heading"></h2>
+
+            <p style="color: #fff; font-size: 1.5rem; text-align:center ">
+                A nossa equipa de engenharia e consultoria está pronta para analisar o seu desafio de conectividade e
+                apresentar
+                uma <strong>Proposta de Solução Técnica Gratuita</strong> em 48 horas.
+            </p>
+
+            <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)" class="contact-form">
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="full_name">Nome Completo</label>
+                        <input type="text" id="full_name" formControlName="full_name" required>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label for="email">Email Corporativo</label>
+                        <input type="email" id="email" formControlName="email" placeholder="nome@suaempresa.com"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="company_name">Empresa</label>
+                        <input type="text" id="company_name" formControlName="company_name" required>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label for="job_title">Cargo</label>
+                        <input type="text" id="job_title" formControlName="job_title" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="country">País</label>
+                        <input type="text" id="country" formControlName="country" required>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label for="challenge">Desafio</label>
+                        <select id="challenge" formControlName="challenge" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="custos_variaveis">Eliminar custos variáveis de redes celulares.</option>
+                            <option value="off_grid">Garantir conectividade Off-Grid.</option>
+                            <option value="rastreio">Monitorização de frotas.</option>
+                            <option value="sensores_longevidade">Sensores IoT de longa duração.</option>
+                            <option value="soberania_dados">Soberania de Dados e Cloud IoT Angola.</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" rows="5" formControlName="message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button uk-border-pill">
+                    Receber a Proposta Técnica Gratuita
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+
+<!-- VALIDATION MODAL -->
+<div id="validation-modal" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body glass-modal">
+      <h3 class="modal-title">❗ Campos Incompletos</h3>
+      <p>Por favor preencha todos os campos obrigatórios antes de enviar.</p>
+      <button class="uk-button uk-button-default uk-modal-close modal-button">Fechar</button>
+  </div>
+</div>
+
+<!-- LOADING MODAL -->
+<div id="loading-modal" uk-modal bg-close="false" esc-close="false">
+  <div class="uk-modal-dialog uk-modal-body glass-modal">
+      <h3 class="modal-title">⏳ A Enviar...</h3>
+      <p>Aguarde enquanto processamos a sua solicitação.</p>
+      <div uk-spinner="ratio: 1.5"></div>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div id="success-modal" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body glass-modal">
+      <h3 class="modal-title success">✔ Mensagem Enviada</h3>
+      <p>A sua solicitação foi enviada com sucesso! A nossa equipa irá responder em até 48 horas.</p>
+      <button class="uk-button uk-button-primary uk-modal-close modal-button success-btn">OK</button>
+  </div>
+</div>
+
+<!-- ERROR MODAL -->
+<div id="error-modal" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body glass-modal">
+      <h3 class="modal-title error">⚠ Erro no Envio</h3>
+      <p>Não foi possível enviar a sua mensagem. Por favor, tente novamente mais tarde.</p>
+      <button class="uk-button uk-button-default uk-modal-close modal-button error-btn">Fechar</button>
+  </div>
+</div>
+
+
+
+</section>

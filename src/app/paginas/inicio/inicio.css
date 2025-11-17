@@ -1,0 +1,144 @@
+.titulo-colunas {
+    font-size: 3.5rem;
+    line-height: 1 !important;
+    text-align: left !important;
+    font-weight: 300px !important;
+    color: #fff !important;
+}
+
+.titulo-2 {
+    font-size: 3rem;
+    color: #76b91c !important;
+    line-height: 1 !important;
+    font-family: inherit;
+    text-align: center;
+}
+
+.texto-3 {
+    font-size: 1.5rem;
+    color: #76b91c !important;
+    line-height: 1 !important;
+    text-align: center;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.texto-fundo {
+    display: inline-block;
+    background-color: #76b91c;
+    color: #000 !important;
+    padding: 12px;
+    text-align: center !important;
+    font-weight: 600;
+}
+
+.texto-4 {
+    font-size: 3rem;
+    color: #fff !important;
+    line-height: 1 !important;
+    text-align: center;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.texto-5 {
+    font-size: 2rem;
+    color: #fff !important;
+    line-height: 1 !important;
+    text-align: center;
+    font-family: inherit;
+}
+
+.texto-6 {
+    font-size: 2rem;
+    color: #91ff00 !important;
+    line-height: 1 !important;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.botao-verde {
+    background-color: #76b91c;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botao-verde:hover {
+
+    background-color: #5ea015;
+    color: #fff;
+    translate: 0 -2px;
+    transition: cubic-bezier(1, 0, 0, 1) 0.3s;
+
+}
+
+.uk-accordion-title {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #5f9912 !important;
+}
+
+
+
+
+/* ===== BREAKPOINTS ===== */
+
+/* Telas grandes (desktops acima de 1200px) */
+@media (min-width: 1200px) {
+      .logos{
+        width: 100px !important;
+    }
+}
+
+/* Laptops e tablets horizontais (entre 960px e 1199px) */
+@media (max-width: 1199px) and (min-width: 960px) {
+
+      .logos{
+        width: 100px !important;
+    }
+}
+
+/* Tablets verticais (entre 640px e 959px) */
+@media (max-width: 959px) and (min-width: 640px) {
+    
+
+    .titulo-2 {
+        font-size: 1.5rem;
+    }
+
+    .logos{
+        width: 100px !important;
+    }
+
+    .texto-5 {
+        font-size: 1.5rem;
+        line-height: 2 !important;
+    }
+
+}
+
+/* Mobile (até 639px) */
+@media (max-width: 639px) {
+      .logos{
+        width: 100px !important;
+    }
+
+    .titulo-2 {
+        font-size: 2rem;
+
+    }
+
+    .texto-5 {
+        font-size: 1.5rem;
+        line-height: 1.2 !important;
+
+    }
+
+    .uk-card-body {
+        padding-top: 5px;
+    }
+
+    .uk-text-left {
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,31 @@
+.texto-fundo {
+    display: inline-block;
+    background-color: #76b91c;
+    color: #000 !important;
+    padding: 12px;
+    text-align: center !important;
+    font-weight: 600;
+}
+
+.uk-card-body > p {
+    font-size: 0.9rem !important ;
+    color: #fff !important;
+}
+
+.uk-card-default{
+    border-top: rgb(102, 165, 20) 6px solid !important;
+}
+
+h3, h2{
+    font-family: inherit;
+        color: rgb(102, 165, 20) !important;
+        font-weight: 600;
+
+
+}
+
+.botao-verde {
+    background-color: #76b91c;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
