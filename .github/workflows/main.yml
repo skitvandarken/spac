@@ -64,7 +64,7 @@ jobs:
 
           # Protected items (won't be touched)
           PROTECTED_ITEMS=(
-            
+            .htaccess
           )
           # =========================
 
