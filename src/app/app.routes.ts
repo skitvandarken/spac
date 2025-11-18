@@ -7,6 +7,7 @@ import { VozVideo } from './paginas/voz-video/voz-video';
 import { Cloud } from './paginas/cloud/cloud';
 import { Termos } from './paginas/termos/termos';
 import { Pprivacidade } from './paginas/pprivacidade/pprivacidade';
+import { Contacto } from './paginas/contacto/contacto';
 
 export const routes: Routes = [
 
@@ -16,7 +17,8 @@ export const routes: Routes = [
     {path: 'voz_video', component: VozVideo},
     {path:'cloud', component: Cloud},
     {path: 'termos', component: Termos },
-    {path: 'politicas', component: Pprivacidade }
+    {path: 'politicas', component: Pprivacidade },
+    {path: 'contacto', component: Contacto}
   
     
     

@@ -3,19 +3,31 @@
   transition: all 0.3s ease;
 }
 
+/* --- NEW STYLE ADDED HERE --- */
+/* Add margin to the right of the logo for separation */
+.uk-navbar-item.uk-logo {
+    /* Base margin for separation on all screen sizes */
+    margin-right: 20px; 
+}
+
 li, a {
   color: #fff !important;
   font-weight: 700;
   font-family: 'Barlow', sans-serif !important;
 }
+
 li, a:hover {
   color: #76b91c !important;
-
 }
 
 .uk-navbar-dropdown {
   background: linear-gradient(190deg, #000, #333) !important;
   border-radius: 0px 0px 10px 10px;
+}
+
+/* Offcanvas Styles */
+.uk-offcanvas-bar {
+    background: linear-gradient(190deg, #000, #333) !important; /* Ensure offcanvas uses your theme */
 }
 
 .uk-offcanvas-bar a {
@@ -31,12 +43,7 @@ li, a:hover {
 
 /* ===== BREAKPOINTS ===== */
 
-/* Telas grandes (desktops acima de 1200px) */
-@media (min-width: 1200px) {
-
-}
-
-/* Laptops e tablets horizontais (entre 960px e 1199px) */
+/* Laptops and horizontal tablets (between 960px and 1199px) */
 @media (max-width: 1199px) and (min-width: 960px) {
   .uk-navbar-nav > li > a {
     font-size: 15px;
@@ -44,7 +51,7 @@ li, a:hover {
   }
 }
 
-/* Tablets verticais (entre 640px e 959px) */
+/* Vertical tablets (between 640px and 959px) */
 @media (max-width: 959px) and (min-width: 640px) {
   .uk-navbar-item img {
     width: 150px;
@@ -52,9 +59,13 @@ li, a:hover {
   .uk-navbar-container {
     padding: 5px 0;
   }
+  /* Reduce logo margin slightly on tablets */
+  .uk-navbar-item.uk-logo {
+    margin-right: 15px; 
+  }
 }
 
-/* Mobile (até 639px) */
+/* Mobile (up to 639px) */
 @media (max-width: 639px) {
   .uk-navbar-item img {
     width: 130px;
@@ -68,14 +79,8 @@ li, a:hover {
   .uk-offcanvas-bar ul li a {
     font-size: 15px;
   }
-}
-
-
-
-.dropdown-arrow {
-  transition: transform 0.3s ease;
-}
-
-.uk-open > a .dropdown-arrow {
-  transform: rotate(180deg); /* flips arrow UP when open */
+  /* Reduce logo margin further on mobile */
+  .uk-navbar-item.uk-logo {
+    margin-right: 10px; 
+  }
 }

@@ -3,15 +3,14 @@
     <div class="uk-navbar">
 
       <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-          <!-- Logo wrapped in li -->
-          <li>
-            <a class="uk-navbar-item uk-logo" routerLink="/" aria-label="Back to Home">
-              <img src="img/logo-180x32-spaceall.png" alt="Logo">
-            </a>
-          </li>
+        <a class="uk-navbar-item uk-logo" routerLink="/" aria-label="Back to Home">
+          <img src="img/logo-180x32-spaceall.png" alt="Logo">
+        </a>
+      </div>
+
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
           
-          <!-- Dropdown menu -->
           <li class="uk-parent">
             <a href="#">CONECTIVIDADE <span uk-navbar-parent-icon></span></a>
             <div class="uk-navbar-dropdown">
@@ -22,17 +21,46 @@
             </div>
           </li>
           
-          <!-- Regular menu items -->
           <li><a routerLink="/voz_video">VOZ & VÍDEO</a></li>
           <li><a routerLink="/cloud">CLOUD</a></li>
-        </ul>
-      </div>
+                    <li><a routerLink="/contacto">CONTACTO</a></li>
 
-      <div class="uk-navbar-right">
-        <!-- Add your right-side content here -->
-        <!-- Remove the commented code if not needed -->
+        </ul>
+
+        <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+
       </div>
 
     </div>
   </div>
 </nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default">
+            
+            <li class="uk-margin-small-bottom">
+                <a class="uk-logo" routerLink="/" aria-label="Back to Home" uk-toggle="target: #offcanvas-nav">
+                    <img src="img/logo-180x32-spaceall.png" alt="Logo" style="width: 150px;">
+                </a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            
+            <li class="uk-parent">
+                <a href="#">CONECTIVIDADE</a>
+                <ul class="uk-nav-sub">
+                    <li uk-toggle="target: #offcanvas-nav"><a routerLink="/lorawan">LoRaWAN</a></li>
+                    <li uk-toggle="target: #offcanvas-nav"><a routerLink="/wifi_halow">WiFi HaLow</a></li>
+                </ul>
+            </li>
+
+            <li uk-toggle="target: #offcanvas-nav"><a routerLink="/voz_video">VOZ & VÍDEO</a></li>
+            <li uk-toggle="target: #offcanvas-nav"><a routerLink="/cloud">CLOUD</a></li>
+                                <li><a routerLink="/contacto">CONTACTO</a></li>
+
+
+        </ul>
+
+    </div>
+</div>
