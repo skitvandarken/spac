@@ -1,47 +1,36 @@
-<nav class="uk-navbar-container">
+<nav class="uk-navbar-container" uk-navbar>
   <div class="uk-container">
-    <div uk-navbar>
+    <div class="uk-navbar">
 
       <div class="uk-navbar-left">
-
         <ul class="uk-navbar-nav">
-          <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">
-            <img src="img/logo-180x32-spaceall.png" alt="Logo">
-          </a>
+          <!-- Logo wrapped in li -->
           <li>
+            <a class="uk-navbar-item uk-logo" routerLink="/" aria-label="Back to Home">
+              <img src="img/logo-180x32-spaceall.png" alt="Logo">
+            </a>
+          </li>
+          
+          <!-- Dropdown menu -->
+          <li class="uk-parent">
             <a href="#">CONECTIVIDADE <span uk-navbar-parent-icon></span></a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a routerLink="/lorawan">LoRaWAN</a></li>
-                <li><a routerLink="/wifi_halow">WiFi HaLow </a></li>
+                <li><a routerLink="/lorawan">LoRaWAN</a></li>
+                <li><a routerLink="/wifi_halow">WiFi HaLow</a></li>
               </ul>
             </div>
           </li>
-          <li><a routerLink="/voz_video" href="#">VOZ & VÍDEO</a></li>
-          <li><a routerLink="/cloud" >CLOUD</a></li>
+          
+          <!-- Regular menu items -->
+          <li><a routerLink="/voz_video">VOZ & VÍDEO</a></li>
+          <li><a routerLink="/cloud">CLOUD</a></li>
         </ul>
-
       </div>
-      <div class="uk-navbar-right">
-<!-- 
-        <ul class="uk-navbar-nav">
-          <li>
-            <a href="#">Parent <span uk-navbar-parent-icon></span></a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#">Item</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">Item</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
 
-        -->
+      <div class="uk-navbar-right">
+        <!-- Add your right-side content here -->
+        <!-- Remove the commented code if not needed -->
       </div>
 
     </div>
