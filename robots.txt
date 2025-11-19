@@ -1,0 +1,28 @@
+# Robots.txt para a SPA Angular da SPACEALL (https://spaceall.net/)
+# CRÍTICO: Garantir que o Googlebot pode renderizar a página (acesso a JS/CSS).
+
+# Regra geral para todos os rastreadores
+User-agent: *
+
+# **DIRETIVAS CRÍTICAS DE PERMISSÃO (ALLOW):**
+# É ESSENCIAL permitir o rastreamento das pastas de assets, scripts e styles.
+# Caso contrário, o Google não verá conteúdo, apenas HTML vazio.
+Allow: /assets/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+
+# **DIRETIVAS DE BLOQUEIO (DISALLOW):**
+# Bloqueia rotas virtuais de baixa relevância/sensíveis, gerenciadas pelo router Angular.
+Disallow: /admin/
+Disallow: /login/
+Disallow: /checkout/
+Disallow: /carrinho/
+Disallow: /minha-conta/
+
+# Bloqueia a indexação de URLs com parâmetros de pesquisa ou filtros (comum em SPAs).
+Disallow: /*?
+
+# **SITEMAP CRÍTICO:**
+Sitemap: https://spaceall.net/sitemap.xml
