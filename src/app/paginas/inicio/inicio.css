@@ -79,8 +79,15 @@
 }
 
 
+.bg-gradient-dark {
+    background: linear-gradient(-190deg, #000, #222) !important;
+}
 
 
+
+h1{
+    font-family: inherit;
+}
 /* ===== BREAKPOINTS ===== */
 
 /* Telas grandes (desktops acima de 1200px) */

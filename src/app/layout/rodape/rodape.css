@@ -81,6 +81,11 @@ b{
   color: #ffffff;
 }
 
+h3{
+  font-family: inherit;
+  color: #fff;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 960px) {
   .footer-content {
