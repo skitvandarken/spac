@@ -22,7 +22,7 @@ export class Inicio {
     private title: Title
   ) {
     /* ✅ TITLE */
-    this.title.setTitle('SPACEALL | LoRaWAN, Wi-Fi, Internet e Cloud para Empresas em Angola');
+    this.title.setTitle(' ');
 
     /* ✅ META DESCRIPTION */
     this.meta.addTag({
